@@ -1,0 +1,725 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/*sets the style for everything*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;;
+	text-decoration: none;
+}
+
+/*sets the animation for scrolling*/
+html{
+	scroll-behavior: smooth;
+}
+
+/*sets the design for all the text or images under header*/
+header{
+	height: 109vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7));
+    background-position: center;
+   	background-size: cover;
+    position: relative;
+	
+}
+
+/*sets tthe background color of the body*/
+body{
+	background-color: #EFE5D5;
+}
+
+/*sets the wodth for the img under the left class*/
+.left img{
+	width: 100px;
+}
+
+/*sets the style for the topNav class under nav*/
+nav .topNav{
+	width: 100%;
+	height: 80px;
+	background: #285E6A;
+	padding: 0 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	z-index: 1;
+}
+
+/*sets the style for everything under the left class which is under the topNav class and under nav*/
+nav .topNav .left{
+	display: flex;
+	align-items: center;
+}
+
+/*sets the style for the unordered list under the right class which is under the topNav class and under nav*/
+nav .topNav .right ul{
+	list-style: none;
+	display: flex;
+}
+
+/*sets the style for all the items in the unordered list which is under the right class and under nav*/
+nav .topNav .right ul li{
+	margin: 0 12px;
+}
+
+/*sets the design for the first item on the unordered list under right class and under nav*/
+nav .right ul li:first-child{
+	margin-top: 35px;		
+}
+
+/*sets style for the second item in the unordered list under right class*/
+nav .right ul li:nth-child(2){
+	margin-top: 35px;
+}
+
+/*sets the style for the links of all the items in the unordered list under the right of the toNav class*/
+nav .topNav .right ul li a{
+	display: block;
+	padding: 0px 10px;
+	color: white;
+}
+
+/*sets effect of each link of the list under the unordered list of the right in the topNav class*/
+nav .topNav .right ul li a::after{
+	content:' ';
+	width: 0%;
+	height: 2px;
+	background: red;
+	display: block;
+	margin: auto;
+	transition: 0.5s; 	
+}
+
+/*sets the effect after the content when it (content) is hovered*/
+nav .topNav .right ul li a:hover::after{
+	width: 100%;
+}
+
+/*sets style under botNav class*/
+nav .botNav{
+	width: 100%;
+	background: white;
+	height: 45px;
+	padding: 0 50px;
+	position: fixed;
+	margin-top: 80px;
+	position: fixed;
+	z-index: 1;		
+}
+
+/*sets the style of the unordered list unfer botNav class*/
+nav .botNav ul{
+	width: 100%;
+	height: 45px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	list-style: none;
+}
+
+/*sets the style for the links in each item in the unordered list of botNav class under nav*/
+nav .botNav ul li a{
+	letter-spacing: 2px;
+	font-size: 12px;
+	color: black;
+}
+
+/*sets the style when the links in each item in the unordered list under botNav class and nav*/
+nav .botNav ul li a:hover{
+	text-decoration: underline;
+}
+
+/*sets the design of the links under the donate id which is an item on the unordered list of botNav and under nav*/
+nav .botNav ul li #donate a{
+	padding: 14px;
+	padding-top: 17px;
+	background-color: lightgrey;
+	height: 45px;		
+	color: black;
+}
+
+/*sets the design when the link under the id donate which is an item in the unordered list of the botNav and nav class is hovered*/
+nav .botNav ul li #donate a:hover{
+	background-color: #FCC200;
+	color: white;
+	transition: 0.7s;
+}
+
+/*sets the style/deisgn for the picture to be used in the header*/
+.headerpic{
+	position: relative;
+	left: 0;
+	top: 50px;
+	right: 0;
+	bottom: 0;
+	opacity: 85%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    z-index: -1;
+}
+
+/*sets the width of the img in headerpic*/
+.headerpic img{
+	width: 100%;
+}
+
+/*sets the design of the h1 under para class*/
+.para h1{
+	text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 50px;
+    padding: 30px 20px;
+    opacity: 90%;
+    border-radius: 30px;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 2px;
+}
+
+/* sets the design for all the p in para class*/
+.para p{
+	text-align: center;
+    position: absolute;
+    top: 56%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 17px;
+    padding: 30px 20px;
+    opacity: 90%;
+    border-radius: 30px;
+    font-family: 'PT Serif', serif;
+    text-align: justify;
+}
+
+/*sets the design for the button*/
+button {
+  	border: none;
+  	outline: 0;
+  	display: inline-block;
+  	position: absolute;
+  	font-size: 15px;
+  	color: white;
+  	background-color: #008080;
+  	border-radius: 20px;
+  	padding: 10px 20px; 
+  	top: 60%;
+  	left: 45%;
+  	cursor: pointer;
+  	font-weight: bold;
+}
+
+/*sets the style for when the button is hovered*/
+button:hover{
+	background-color: #555;
+	color: white;
+}
+
+/*sets the style of the text under titleofDesc class*/
+.titleofDesc{
+	padding-top: 30px;
+	padding-left: 30px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 15px;
+}
+
+/*sets the style for everything under description class*/
+.description{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin-top: 5px;
+}
+
+/*sets the design for all the p under the description class*/
+.description p{
+	padding: 5px 20px;
+	font-size: 16px;
+	font-family: 'Poppins', sans-serif;
+	justify-content: space-between;
+	text-align: justify;
+}
+
+/*sets how the columns look like*/
+.column{
+	flex: 1;
+	margin: 2px;
+	padding: 10px;
+}
+
+/*sets the style for all the h1 under titleofHis class*/
+.titleofHis h1{
+	padding-top: 10px;
+	padding-left: 7px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 25px;
+}
+
+/*sets the style of everything under history*/
+.History{
+	padding: 5px 20px;
+	font-size: 16px;
+	justify-content: space-between;
+	text-align: justify;
+}
+
+/*sets the design on how all the p under History class looks like*/
+.History p{
+	padding: 5px 8px;
+	font-size: 16px;
+	font-family: 'Poppins', sans-serif;
+	justify-content: space-between;
+	text-align: justify;
+	padding-top: 10px;
+}
+
+/*sets color for the link under class linkdesc*/
+.linkdesc{
+	color: black;
+}
+
+/*sets the color when link is already visited*/	
+.linkdesc:visited{
+	color: blue;
+}
+
+/*sets how the link will look like when hovered*/
+.linkdesc:hover{
+	text-decoration: underline;
+	color: blue;
+}
+
+/*sets the fontstyle of evrything under learnMor class*/ 
+.learnMor{
+	font-style: italic;
+}
+
+/*sets the style of button2*/
+.button2{
+	border: none;
+  	outline: 0;
+  	display: inline-block;
+  	position: absolute;
+  	font-size: 15px;
+  	color: white;
+  	background-color: #008080;
+  	border-radius: 20px;
+  	padding: 10px 20px; 
+  	top: 183%;
+  	left: 25px;
+  	cursor: pointer;
+  	font-weight: bold;
+}
+
+/*sets the color of slantedL class*/
+.slantedL{
+	color: white;
+}
+
+/*determines how the footer will look like: its position and color*/
+footer{
+	width: 100%;
+	height: 381px;
+	position: absolute;
+	bottom: 0%;
+	top: 230%;
+	background: linear-gradient(to right, #00093c, #2d0b00);
+	color: #fff;
+	padding: 50px 0 30px;
+	border-top-left-radius: 125px;
+	font-size: 13px;
+	line-height: 20px;
+	margin-top: 100px;
+}
+
+/*determines the size of the img containing a link in row class*/
+footer .row a img{
+	width: 150px;
+}
+
+/*determines the position of everything under row class*/
+.row{
+	width: 85%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+/*sets the look for everything in col class*/
+.col{
+	flex-basis: 25%;
+	padding: 10px;
+	font-family: 'Poppins', sans-serif;
+}
+
+/*sets position of h3 in col class*/
+.col h3{
+	width: fit-content;
+	margin-bottom: 40px;
+	position: relative;
+}
+
+/*underlines text containing a link in each item on the last child of col class*/
+.col:last-child li a:hover{
+	text-decoration: underline;
+}
+
+/*sets text color of p under email class*/
+.email p{
+	color: white;
+	width: fit-content;
+	border-bottom: 1px solid #ccc;
+	margin: 20px 0; 
+}
+
+/*removes bullets of the list*/
+.col ul{
+	list-style: none;
+}
+/*sets the margin of each item in the unordered list of col class*/
+.col ul li{
+	margin-bottom: 12px;
+}
+
+/*sets the color of the link in each item under the unordered list of col class*/
+.col ul li a{
+	color: #fff;
+}
+
+/*sets the look of the horizontal line*/
+.hrF{
+	width: 90%;
+	border: 0;
+	border-bottom: 1px solid #ccc;
+	margin: 10px auto;
+}
+
+/*sets how the copyright looks like*/
+.copyright{
+	font-family: 'Poppins', sans-serif;
+	text-align: center;
+}
+
+/*sets the look of the line under my h3*/
+.underline{
+	width: 100%;
+	height: 5px;
+	background: #767676;
+	border-radius: 3px;
+	position: absolute;
+	top: 25px;
+	left: 0;
+	overflow: hidden;
+}
+
+/*sets the look and position of span under underline class*/
+.underline span{
+	width: 15px;
+	height: 100%;
+	background: #fff;
+	border-radius: 3px;
+	position: absolute;
+	top: 0;
+	left: 10px;
+	animation: moving 2s linear infinite;
+}
+
+/*defines the style and animation in each keyframe*/
+@keyframes moving{
+	0%{
+		left: -20px;
+	}
+
+	100%{
+		left: 100%;
+	}
+}
+
+/*sets the style for everything under supportY class*/
+.supportY{
+	font-size: 16px;
+	justify-content: space-between;
+	text-align: justify;
+}
+
+/*sets the look of all the p under supportY class*/
+.supportY p{
+	padding: 5px 20px;
+	font-size: 16px;
+	font-family: 'Poppins', sans-serif;
+	justify-content: space-between;
+	text-align: justify;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+/*sets the location and size of the first graph*/
+.graph1{
+	width: 405px;
+	margin-left: 250px;
+}
+
+/*sets the size of the second graph*/
+.graph2{
+	width: 400px;	
+}
+
+/*sets the style of everything under Support*/
+.Support{
+	margin-top: 20px;
+	padding: 5px 20px;
+	font-size: 16px;
+	justify-content: space-between;
+	text-align: justify;
+}
+
+/*sets the design on how all the p under Support class looks like*/
+.Support p{
+	padding: 5px 8px;
+	font-size: 16px;
+	font-family: 'Poppins', sans-serif;
+	justify-content: space-between;
+	text-align: justify;
+	padding-top: 10px;
+}
+
+/*sets the position ans design of tthe h1 in titleofSup class*/
+.titleofSup h1{
+	padding-top: 10px;
+	padding-left: 7px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 30px;
+	text-align: center;
+}
+
+/*sets the position ans design of tthe h4 in titleofSup class*/
+.titleofSup h4{
+	padding-top: 10px;
+	padding-left: 7px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	text-align: center;
+}
+
+/*determines how the footer will look like: its position and color*/
+.foot2{
+	width: 100%;
+	height: 381px;
+	position: absolute;
+	bottom: 0%;
+	top: 295%;
+	background: linear-gradient(to right, #00093c, #2d0b00);
+	color: #fff;
+	padding: 50px 0 30px;
+	border-top-left-radius: 125px;
+	font-size: 13px;
+	line-height: 20px;
+}
+
+/*determines the size of the img containing a link in row class*/
+.footer .row a img{
+	width: 150px;
+}
+
+/*sets the design and position for the text under column2*/
+.column2{
+	flex: 1;
+	margin: 2px;
+	padding: 10px; 
+}
+
+/*sets the style of the border of the first child in column2 class*/
+.column2:first-child{
+	border-bottom: 4px solid #1338BE;
+	border-left: 4px solid #1338BE;
+}
+
+/*sets the style of border for the last child of column2 class*/
+.column2:last-child{
+	border-top: 4px solid #48AAAD;
+	border-right: 4px solid #48AAAD;
+	height: 350px;
+}
+
+/*sets the position of the first img under a and under column2*/
+.column2 img:first-child{
+	width: 150px;
+	margin-left: 230px; 
+}
+
+/*sets the design for the button3*/
+.button3{
+  	border: 4px solid #1338BE;
+  	outline: 0;
+  	display: inline-block;
+  	position: absolute;
+  	font-size: 15px;
+  	color: black;
+  	background-color: #EFE5D5;
+  	border-radius: 20px;
+  	padding: 10px 20px; 
+  	top: 278%;
+  	left: 22%;
+  	cursor: pointer;
+  	font-weight: bold;
+}
+
+/*sets the design if button3 is hovered*/
+.button3:hover{
+	background-color: #1338BE;
+	color: white;
+}
+
+/*sets the design for button4*/
+.button4{
+	border: 4px solid #48AAAD;
+  	outline: 0;
+  	display: inline-block;
+  	position: absolute;
+  	font-size: 15px;
+  	color: black;
+  	background-color: #EFE5D5;
+  	border-radius: 20px;
+  	padding: 10px 20px; 
+  	top: 278%;
+  	left: 70%;
+  	cursor: pointer;
+  	font-weight: bold;
+}
+
+/*sets the design if button4 is hovered*/
+.button4:hover{
+	background-color: #48AAAD;
+	color: white;
+}
+
+/*sets the position of h3 under column2*/
+.column2 h3{
+	text-align: center;
+}
+
+/*sets the position of the p in column2*/
+.column2 p{
+	text-align: center;
+}
+
+/*sets the position and size of the pic*/
+.me{
+	margin-left: 400px;
+	height: 300px;
+}
+
+/*sets the look for about class*/
+.about{
+	font-size: 16px;
+	justify-content: space-between;
+	text-align: justify;
+}
+
+/*sets the look of all the p under about class*/
+.about p{
+	padding: 5px 20px;
+	font-size: 16px;
+	font-family: 'Poppins', sans-serif;
+	justify-content: space-between;
+	text-align: justify;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+/*styles the ordered list of about class*/
+.about ul{
+	font-size: 16px;
+	font-family: 'Poppins', sans-serif;
+	margin-left: 100px;
+	list-style: none;
+}
+
+/*styles the h4 of the about class*/
+.about h4{
+	margin-left: 20px;
+	font-family: 'Poppins', sans-serif;
+}
+
+/*sets the style of the unordered list under Resources class*/
+.Resources ul{
+	font-size: 16px;
+	font-family: 'Poppins', sans-serif;
+	margin-left: 100px;
+}
+
+/*determines how the footer will look like: its position and color*/
+.foot3{
+	width: 100%;
+	height: 381px;
+	position: absolute;
+	bottom: 0%;
+	top: 278%;
+	background: linear-gradient(to right, #00093c, #2d0b00);
+	color: #fff;
+	padding: 50px 0 30px;
+	border-top-left-radius: 125px;
+	font-size: 13px;
+	line-height: 20px;
+}
+
+/*determines the size of the img containing a link in row class*/
+.footer .row a img{
+	width: 150px;
+}
+
+/*sets text decoration of everything in sprites class to none*/
+.sprites a {
+	text-decoration: none;
+}
+
+/*sets the real of the facebook sprite*/
+#facebook{
+	width: 84px;
+	height: 83px;
+	background: url(../images/sd.png) 0px 0px;
+	opacity: 0.5;
+}
+
+/*sets the real image of the gmail sprite*/
+#gmail{
+	width: 84px;
+	height: 83px;
+	background: url(../images/sd.png) -253px 0px;
+	opacity: 0.5;
+}
+
+/*sets the real image of twitter*/
+#twitter{
+	width: 84px;
+	height: 83px;
+	background: url(../images/sd.png) -671px 0px; 
+	opacity: 0.5;
+}
+
+/*sets opacity of facebook back to normal when hovered*/
+#facebook:hover{
+	opacity: 1;
+}
+
+/*sets opacity of gmail back to normal when hovered*/
+#gmail:hover{
+	opacity: 1;
+}
+
+/*sets opacity of twitter back to normal when hovered*/
+#twitter:hover{
+	opacity: 1;
+}

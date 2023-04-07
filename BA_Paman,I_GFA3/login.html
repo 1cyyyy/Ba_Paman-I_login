@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log-in</title>
+    <script src="scripts.js"></script>
+    <link rel="stylesheet" href="style_login.css">
+</head>
+<body>
+    <header>
+        <div id="left">
+            <div id="intro">
+                <h1>Honest Sex Education</h1>
+                <p>Young people need all the information and knowledge to make healthy decisions.</p>
+            </div>
+
+            <div id="why">
+                <p>
+                    Our honest sex education advocacy seeks to educate people about sex, sexuality, and relationships. We hope that everyone will be able to make informed choices about their sexual health and relationships.
+                </p>
+            </div>
+        </div>
+
+        <div id="right">
+            <form class="form" onsubmit="validate();return false">
+                <p class="Join">Join us and save many people against sexual violence.</p>
+                <p class="Join2">Log-in for more details</p>
+                <div class="input">
+                    <label id="required">Username: </label>
+                    <br>
+                    <input id="user" placeholder="Enter Username"><br>
+                    <div class="password">
+                        <label id="required">Password: </label>
+                        <br>
+                        <input type="password" id="pass" placeholder="Enter Password">
+                        <br>
+                        <input type="checkbox" id="ShowPass" onclick="show()"> Show Password
+                    </div>
+
+                    <div id="error"></div>
+                    <input type="submit" value="LOGIN" id="loginbutton">
+
+                    <p class="forgot"> 
+                        <a href="#">Forgot password?</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </header>
+
+    <footer id="footer">
+        <div class="desc">
+            <img src="images/logo.png" id="logo">
+            <p>IC Incorporation.</p>
+            <p>Helping people since 2015.</p>
+        </div>
+
+        <div class="foot1">
+            <h3>Office <div class="underline"><span></span></h3>
+            <p>1876 Purok Chico</p>
+            <p>Sto. Niño, Panabo City</p>
+            <br>
+            <a href="mailto:iceeh.paman@smc.pshs.edu.ph" class="email">
+                <p>iceeh.paman@smc.pshs.edu.ph</p>
+            </a>
+            <br>
+            <h4>+63 - 9474927032</h4>
+
+            <div class="sprites">
+                <a href="https://www.facebook.com/profile.php?id=100010394257190">
+                    <img id="facebook" src="images/trans.png" width="1" height="1">
+                </a>
+    
+                <a href="https://twitter.com/8lakeyy?t=UE8f399JB1nxrHq1-i2jH&s=09">
+                    <img id="twitter" src="images/trans.png" width="1" height="1">
+                </a>
+            </div>
+        </div>
+
+    
+    </footer>
+</body>
+</html>
